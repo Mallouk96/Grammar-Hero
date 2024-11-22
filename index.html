@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grammar Hero</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Welcome to Grammar Hero</h1>
+      <h1>Welcome to Grammar Hero!</h1>
+      <p>Learn English grammar in a fun and easy way!</p>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#lessons">Lessons</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#lessons">Lessons</a>
-        <a href="#quiz">Quiz</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="main-content">
+      <!-- Home Section -->
+      <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to Grammar Hero! This is where your journey to mastering English grammar begins!</p>
+      </section>
 
-    <section id="home">
-        <h2>Welcome to Grammar Hero!</h2>
-        <p>This is your personal guide to mastering grammar.</p>
-    </section>
-
-    <section id="lessons">
+      <!-- Lessons Section -->
+      <section id="lessons">
         <h2>Lessons</h2>
-        <p>Learn grammar rules step by step. Let's begin with basic sentence structure!</p>
-    </section>
+        <p>Here, you will find interactive lessons that will help you understand English grammar better.</p>
+        <ul>
+          <li><a href="#">Lesson 1: Nouns</a></li>
+          <li><a href="#">Lesson 2: Verbs</a></li>
+          <li><a href="#">Lesson 3: Adjectives</a></li>
+        </ul>
+      </section>
 
-    <section id="quiz">
+      <!-- Quiz Section -->
+      <section id="quiz">
         <h2>Quiz</h2>
-        <p>Take a quiz to test your grammar knowledge.</p>
-    </section>
+        <p>Test your grammar knowledge here with fun and interactive quizzes.</p>
+        <button id="start-quiz-btn">Start Quiz</button>
+      </section>
 
-    <footer>
-        <p>&copy; 2024 Grammar Hero</p>
-    </footer>
-</body>
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions or need support, feel free to contact us!</p>
+        <form action="mailto:olaimanmoloc@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" required></textarea><br />
+          <input type="submit" value="Send" />
+        </form>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
